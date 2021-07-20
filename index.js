@@ -42,8 +42,8 @@ app.post("/api/upload", upload.single("file"), (req, res) =>{
   res.status(200).json("file has been uploaded")
 })
 
-// Middleware
-app.use(express.static('client/public'));
+// // Middleware
+// app.use(express.static('client/public'));
 
 // ROUTES
 app.use("/api/auth", authRoute)
