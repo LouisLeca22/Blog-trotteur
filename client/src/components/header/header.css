@@ -1,0 +1,42 @@
+
+
+.headerTitles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lora", serif;
+  color: #fff;
+}
+
+.headerTitleSm {
+  position: absolute;
+  top: 35%;
+  font-size: 1.3rem;
+}
+
+.headerTitleLg {
+  position: absolute;
+  top: 18%;
+  font-size: 5rem;
+}
+
+.headerButton{
+  position: absolute;
+  top: 40%;
+  color: white;
+  margin-top: 1.3rem;
+  background-color: teal;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+
+}
+
+.headerImg {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
