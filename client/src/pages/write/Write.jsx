@@ -13,7 +13,7 @@ export default function Write() {
 
   useEffect(() => {
     const fetchCats = async () => {
-      const res = await axios.get("/categories/")
+      const res = await axios.get("/api/categories/")
       setCats(res.data)
     }
 
