@@ -30,7 +30,7 @@ export default function SinglePost() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete("/posts/" + path, {data: {username: user.username}});
+      await axios.delete("/api/posts/" + path, {data: {username: user.username}});
       window.location.replace("/")
     } catch (err) {
       
@@ -39,7 +39,7 @@ export default function SinglePost() {
 
   const handleUpdate = async () => {
     try {
-      await axios.put("/posts/" + path, { 
+      await axios.put("/api/posts/" + path, { 
         username: user.username, title, desc
       });
       setUpdateMode(false)
