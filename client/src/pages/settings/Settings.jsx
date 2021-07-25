@@ -35,7 +35,7 @@ export default function Settings() {
       } catch (err) {}
     }
     try {
-      const res = await axios.put("/api/users" + user._id, updatedUser);
+      const res = await axios.put("/api/users/" + user._id, updatedUser);
       setSuccess(true);
       dispatch({ type: "UPDATE_SUCCESS", payload: res.data });
     } catch (err) {
@@ -46,7 +46,7 @@ export default function Settings() {
   const handleDelete = async () => {
 
     try {
-      await axios.delete("/api/users" + user._id, {data: {userId: user._id}});
+      await axios.delete("/api/users/" + user._id, {data: {userId: user._id}});
       dispatch({type: "LOGOUT"})
       window.location.replace("/")
     } catch (err) {
